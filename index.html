@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaradhy Srivastava - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f7f7; /* subtle grey for professional look */
+      color: #000;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #f0f0f0, #e5e5e5);
+      padding: 120px 20px 80px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #111;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #333;
+      max-width: 700px;
+      margin: 15px auto;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      margin-bottom: 40px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .links {
+      margin-top: 15px;
+      text-align: center;
+    }
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 8px 10px 0 0;
+      padding: 8px 14px;
+      border: 2px solid #000;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .links a:hover {
+      background: #000;
+      color: #fff;
+    }
+    .links img {
+      width: 18px;
+      height: 18px;
+    }
+    #back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #000;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: none;
+      transition: background 0.3s;
+      z-index: 1000;
+    }
+    #back-to-top:hover {
+      background: #333;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      color: #333;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aaradhy Srivastava</h1>
+    <p>Python Developer | AI/ML Engineer | Web Developer</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Profile</h3>
+        <p>I am a versatile Python Developer and AI/ML Enthusiast with hands-on experience in designing and deploying end-to-end machine learning solutions, including fraud detection systems, conversational chatbots, and recommender engines.</p>
+      </div>
+      <div class="card">
+        <h3>LinkedIn</h3>
+        <p>Connect with me on LinkedIn to know more about my journey and professional updates.</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/aaradhy-srivastava-b6a329331" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"> LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Languages</h3>
+        <p>Python, HTML, CSS</p>
+      </div>
+      <div class="card">
+        <h3>Frameworks & Libraries</h3>
+        <p>Flask, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Tkinter</p>
+      </div>
+      <div class="card">
+        <h3>Machine Learning</h3>
+        <p>Random Forest, Collaborative Filtering, Cosine Similarity, SMOTE, Model Evaluation</p>
+      </div>
+      <div class="card">
+        <h3>Artificial Intelligence</h3>
+        <p>Minimax Algorithm, Alpha-Beta Pruning, Rule-Based Systems, Wake Word Detection, TTS, Voice Recognition</p>
+      </div>
+      <div class="card">
+        <h3>Concepts</h3>
+        <p>GUI Development, REST APIs, Recommender Systems, NLP</p>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <p>Git, VS Code</p>
+      </div>
+      <div class="card">
+        <h3>Resume</h3>
+        <p>View my complete resume with detailed experience and achievements.</p>
+        <div class="links">
+          <a href="https://drive.google.com/file/d/1w4-fxeJYSGkWINovBtvW6j3Cs6N7EGf7/view?usp=sharing" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/adobeacrobatreader.svg" alt="Resume"> Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Work & Projects</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Fraud Detection System</h3>
+        <p>A Flask-based ML web application using Random Forest for fraud detection, integrated with APIs and visual dashboards.</p>
+      </div>
+      <div class="card">
+        <h3>Voice ChatBot</h3>
+        <p>AI-powered assistant with wake word detection, TTS, voice recognition, and Tkinter GUI.</p>
+      </div>
+      <div class="card">
+        <h3>Movie Recommender System</h3>
+        <p>Content-based recommender using collaborative filtering and cosine similarity to suggest movies.</p>
+      </div>
+      <div class="card">
+        <h3>Tic-Tac-Toe AI Game</h3>
+        <p>Interactive game using Minimax algorithm and Alpha-Beta pruning to create an unbeatable AI opponent.</p>
+      </div>
+      <div class="card">
+        <h3>GitHub</h3>
+        <p>Explore all my projects and contributions on GitHub.</p>
+        <div class="links">
+          <a href="https://github.com/aaradhysrivastava" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"> GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Email</h3>
+        <p><a href="mailto:aaradhysrivastava2708@gmail.com">aaradhysrivastava2708@gmail.com</a></p>
+      </div>
+      <div class="card">
+        <h3>Phone</h3>
+        <p><a href="tel:+918318995342">+91-8318995342</a></p>
+      </div>
+      <div class="card">
+        <h3>LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/in/aaradhy-srivastava-b6a329331" target="_blank">linkedin.com/in/aaradhy-srivastava-b6a329331</a></p>
+      </div>
+      <div class="card">
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/aaradhysrivastava" target="_blank">github.com/aaradhysrivastava</a></p>
+      </div>
+    </div>
+  </section>
+
+  <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑ Top</button>
+
+  <footer>
+    <p>© 2025 Aaradhy Srivastava. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
